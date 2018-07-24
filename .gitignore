@@ -7,3 +7,6 @@
 
 # .tfvars files
 *.tfvars
+
+# do not publish backend config
+backend.tf
