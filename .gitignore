@@ -10,3 +10,4 @@
 
 # do not publish backend config
 backend.tf
+secure.tf
