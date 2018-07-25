@@ -1,0 +1,59 @@
+//////
+//
+//  Project and organization variables
+//
+//////
+variable "project" {
+  default = ""
+}
+variable "project_id" {
+  default = ""
+}
+variable "billing_account" {
+  default = ""
+}
+variable "org_id" {
+  default = ""
+}
+
+//////
+//
+// Default region and zone for master node
+//
+//////
+variable "primary_region" {
+  default = ""
+}
+variable "primary_zone" {
+  default = ""
+}
+
+
+//////
+//
+// letsencrypt and domain configuration
+//
+//////
+variable "letsencrypt" {
+    // string [true / false]
+    // true will cause rancher to attempt to register with letsencrypt, you must
+    // first setup a valid DNS record for rancher's public ip address
+    default = "false"
+}
+variable "fqdn" {
+    default = ""
+}
+
+
+//////
+//
+// k8s config
+//
+//////
+variable "cluster_name" {
+    default = ""
+}
+variable "token" {
+    // Used to join the cluster
+    default = ""
+}
